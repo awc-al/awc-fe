@@ -1,0 +1,94 @@
+/* Container styling */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding: 90px 80px;
+}
+
+/* Form Wrapper */
+.formWrapper {
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+}
+
+/* Title */
+.title {
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 0;
+    color: #0A2647;
+}
+
+/* Form */
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Input Fields */
+.inputGroup {
+    position: relative;
+    width: 100%;
+}
+
+.input,
+.textarea {
+    width: 100%;
+    padding: 10px 0;
+    border: none;
+    border-bottom: 2px solid #000;
+    outline: none;
+    font-size: 16px;
+    background: transparent;
+}
+
+.textarea {
+    height: 80px;
+    resize: none;
+}
+
+/* Submit Button */
+.submitButton {
+    background-color: black;
+    color: white;
+    padding: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.submitButton:hover {
+    opacity: 0.8;
+}
+
+.error {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.errorBlock {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.errorText {
+    color: red;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 60px 30px;
+    }
+}

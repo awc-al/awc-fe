@@ -1,0 +1,13 @@
+.line {
+    /* width: calc(100% - 160px); */
+    width: 100%;
+    /* 80px on each side */
+    border-top: 1px solid #787878;
+    margin: 0 auto;
+}
+
+/* @media (max-width: 768px) {
+    .line {
+        width: calc(100% - 60px);
+    }
+} */

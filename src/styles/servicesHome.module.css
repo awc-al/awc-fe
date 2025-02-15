@@ -1,0 +1,57 @@
+.servicesContainer {
+    padding: 90px 80px;
+    text-align: center;
+}
+
+.servicesContainer h1 {
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 5px;
+    color: #0A2647;
+}
+
+.servicesList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 38px;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.servicesList a {
+    text-decoration: none;
+}
+
+.linkCard {
+    max-width: 500px;
+    width: 100%;
+    text-decoration: none;
+}
+
+.viewMore {
+    display: none;
+    margin-top: 70px;
+    background-color: #ffffff;
+    border: 1px solid #000000;
+    /* WhatsApp green */
+    color: #000;
+    padding: 12px 24px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 10px;
+    align-items: center;
+    gap: 10px;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .viewMore {
+        margin-top: 30px;
+        display: block;
+    }
+
+    .servicesContainer {
+        padding: 60px 30px 60px;
+    }
+}

@@ -1,0 +1,85 @@
+.galleryContainerDesktop {
+    background-color: #000;
+    padding: 90px 80px;
+}
+
+.galleryContainerMobile {
+    background-color: #000;
+    padding: 60px 30px;
+    display: none;
+}
+
+.galleryTitleMiddle,
+.galleryTitleMiddleMobile {
+    color: #fff;
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 0px;
+    margin-top: 0;
+}
+
+/* Gallery Grid */
+.galleryGrid {
+    display: flex;
+    justify-content: center;
+}
+
+.lineContainerMiddle {
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 20px;
+}
+
+/* Prevent Image Stretching */
+.imageWrapper img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Columns Layout */
+.leftSide,
+.center,
+.rightSide {
+    max-width: 400px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+@media screen and (max-width:768px) {
+    .galleryContainerDesktop {
+        display: none;
+    }
+
+    .galleryContainerMobile {
+        display: block;
+    }
+
+    .lineContainerMiddleMobile {
+        margin: 15px 0px;
+    }
+
+    /* Columns Layout */
+    .leftSideMobile,
+    .centerMobile,
+    .rightSideMobile {
+        /* max-width: 300px; */
+        width: 100%;
+        display: flex;
+        gap: 5px;
+        align-items: center;
+    }
+
+    /* Prevent Image Stretching */
+    .imageWrapperMobile img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+
+}
